@@ -1,5 +1,3 @@
-/.idea/
 /.vs/
-/cmake-build-debug/
 /out/
 /CMakeSettings.json
