@@ -1,5 +1,13 @@
 #include "search.h"
 
+int grok::simpleSearch(int arr[], int N, int a)
+{
+	for (int i = 0; i < N; i++)
+		if (arr[i] == a)
+			return i;
+	return -1;
+}
+
 int grok::binarySearch(int arr[], int N, int a)
 {
 	int high = N - 1;
