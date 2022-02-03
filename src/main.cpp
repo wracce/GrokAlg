@@ -1,14 +1,15 @@
-#include <iostream>
 #include "search.h"
+#include "sort.h"
 using namespace std;
 
 int main() 
 {
-	int arr[] = {1,2,5,9,12};
-	int N = sizeof(arr)/sizeof(arr[0]);
+	int* arr =  new int[] {12, 8, 4, 9, 13};
+	int N = 5;
 
-	cout << grok::simpleSearch(arr, N, 12) << endl;
-	cout << grok::binarySearch(arr,N,12) << endl;
+	grok::print(arr, N); cout << endl;
+	grok::insertSort(arr, N);
+	grok::print(arr, N); cout << endl;
 
 	system("pause");
 	return 0;
