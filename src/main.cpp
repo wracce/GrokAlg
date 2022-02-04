@@ -1,5 +1,6 @@
 #include "search.h"
 #include "sort.h"
+#include "other.h"
 using namespace std;
 
 int main() 
@@ -7,9 +8,8 @@ int main()
 	int* arr =  new int[] {12, 8, 4, 9, 13};
 	int N = 5;
 
-	grok::print(arr, N); cout << endl;
-	grok::insertSort(arr, N);
-	grok::print(arr, N); cout << endl;
+	//cout << grok::factorial(4) << endl;
+	cout << "GSD(10,5): " << grok::gsd(10,5) << endl;
 
 	system("pause");
 	return 0;
