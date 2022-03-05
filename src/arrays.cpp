@@ -22,3 +22,8 @@ void grok::print(int* arr, int N)
 	for (int i = 1; i < N; i++)
 		std::cout << " " << arr[i];
 }
+
+void grok::unite(std::vector<int> *vec1, std::vector<int> *vec2)
+{
+	vec1->insert(vec1->end(), vec2->begin(), vec2->end());
+}
